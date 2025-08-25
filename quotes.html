@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<title>Get Quotes – Request a Quote | TPPC</title>
+	<link rel="icon" href="/assets/images/tppc-logo.png" />
+	<link rel="stylesheet" href="/assets/css/styles.css" />
+	<script defer src="/assets/js/main.js"></script>
+</head>
+<body>
+	<div id="header">@@include('/workspace/partials/header.html')</div>
+	<main class="container">
+		<h1>Request a Quote</h1>
+		<p class="muted">Fill in project details and get an instant estimate. Our team will confirm pricing and schedules.</p>
+		<div class="grid cols-3">
+			<div class="card" style="grid-column:span 2">
+				<h2>Project Details</h2>
+				<form id="quote-form" class="needs-validation" novalidate>
+					<div class="inline">
+						<div>
+							<label for="product">Product</label>
+							<select id="product" name="product" required>
+								<option value="">Select…</option>
+								<option value="flyer">Flyer</option>
+								<option value="brochure">Brochure</option>
+								<option value="banner">Banner</option>
+								<option value="booklet">Booklet</option>
+								<option value="businesscard">Business Card</option>
+							</select>
+						</div>
+						<div>
+							<label for="quantity">Quantity</label>
+							<input id="quantity" name="quantity" type="number" min="1" required />
+						</div>
+					</div>
+					<div class="inline">
+						<div>
+							<label for="color">Color</label>
+							<select id="color" name="color" required>
+								<option value="cmyk">CMYK</option>
+								<option value="bw">Black & White</option>
+								<option value="pantone">Pantone Spot</option>
+							</select>
+						</div>
+						<div>
+							<label for="paper">Paper</label>
+							<select id="paper" name="paper" required>
+								<option value="standard">Standard</option>
+								<option value="premium">Premium</option>
+								<option value="recycled">Recycled</option>
+							</select>
+						</div>
+					</div>
+					<div class="inline">
+						<div>
+							<label for="size">Size</label>
+							<select id="size" name="size" required>
+								<option value="small">Small</option>
+								<option value="medium">Medium</option>
+								<option value="large">Large</option>
+							</select>
+						</div>
+						<div>
+							<label for="finishing">Finishing</label>
+							<input id="finishing" name="finishing" placeholder="e.g., gloss, lamination, fold" />
+						</div>
+					</div>
+					<label for="brief">Project Brief</label>
+					<textarea id="brief" name="brief" rows="5" placeholder="Describe your project, deadlines, and any special requirements" required></textarea>
+					<h3 id="quote-total" class="success">Estimated: $0.00</h3>
+					<button class="btn" type="submit">Request Formal Quote</button>
+				</form>
+			</div>
+			<div class="card">
+				<h2>Client Info</h2>
+				<form class="needs-validation" novalidate>
+					<label for="company">Company</label>
+					<input id="company" name="company" required />
+					<label for="name">Contact Name</label>
+					<input id="name" name="name" required />
+					<label for="email">Email</label>
+					<input id="email" type="email" name="email" required />
+					<label for="phone">Phone</label>
+					<input id="phone" type="tel" name="phone" required />
+					<p class="muted">You may upload large assets via FTP: <strong>ftp.tppc.example</strong> (request credentials).</p>
+					<button class="btn" type="submit">Submit</button>
+				</form>
+			</div>
+		</div>
+	</main>
+	<div id="footer">@@include('/workspace/partials/footer.html')</div>
+</body>
+</html>

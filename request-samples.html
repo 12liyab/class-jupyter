@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<title>Request Samples – Forms & Gallery | TPPC</title>
+	<link rel="icon" href="/assets/images/tppc-logo.png" />
+	<link rel="stylesheet" href="/assets/css/styles.css" />
+	<script defer src="/assets/js/main.js"></script>
+</head>
+<body>
+	<div id="header">@@include('/workspace/partials/header.html')</div>
+	<main class="container">
+		<h1>Request Samples</h1>
+		<section id="form" class="card">
+			<h2>Sample Request Form</h2>
+			<form class="needs-validation" novalidate>
+				<div class="inline"><div><label for="sr-name">Name</label><input id="sr-name" required /></div><div><label for="sr-email">Email</label><input id="sr-email" type="email" required /></div></div>
+				<label for="sr-address">Delivery Address</label><input id="sr-address" required />
+				<label for="sr-type">Sample Type</label>
+				<select id="sr-type" required>
+					<option value="">Choose…</option>
+					<option>Paper & Finishes</option>
+					<option>Packaging</option>
+					<option>Large Format</option>
+				</select>
+				<button class="btn" type="submit">Request</button>
+			</form>
+		</section>
+		<section id="gallery">
+			<h2>Sample Gallery</h2>
+			<div class="grid cols-4">
+				<div class="card">Flyers</div>
+				<div class="card">Booklets</div>
+				<div class="card">Banners</div>
+				<div class="card">Business Cards</div>
+			</div>
+		</section>
+	</main>
+	<div id="footer">@@include('/workspace/partials/footer.html')</div>
+</body>
+</html>
