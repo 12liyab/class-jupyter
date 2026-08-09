@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<title>Get Orders – Client Portal | TPPC</title>
+	<link rel="icon" href="/assets/images/tppc-logo.png" />
+	<link rel="stylesheet" href="/assets/css/styles.css" />
+	<script defer src="/assets/js/main.js"></script>
+</head>
+<body>
+	<div id="header">@@include('/workspace/partials/header.html')</div>
+	<main class="container">
+		<h1>Client Portal – Order Tracking</h1>
+		<p class="muted">Track live statuses for your recent projects.</p>
+		<div class="card">
+			<div style="overflow:auto">
+				<table style="width:100%;border-collapse:collapse">
+					<thead>
+						<tr><th>ID</th><th>Project</th><th>Status</th><th>ETA</th></tr>
+					</thead>
+					<tbody id="orders-table-body"></tbody>
+				</table>
+			</div>
+			<p class="muted">For secure portal access, contact <a href="mailto:info@tppc.example">info@tppc.example</a> to enable your account.</p>
+		</div>
+	</main>
+	<div id="footer">@@include('/workspace/partials/footer.html')</div>
+</body>
+</html>
