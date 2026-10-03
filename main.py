@@ -1,7 +1,7 @@
 import pandas as pd
 import matplotlib.pyplot as plt
 
-# t is to Load the Dataset 
+# T is to Load the Dataset 
 df = pd.read_csv('ncr_ride_bookings (2).csv')
 
 # Data Cleaning and Preparation
