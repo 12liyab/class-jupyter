@@ -7,7 +7,7 @@ import numpy as np
 # Step 1: Data Preparation and Cleaning
 # Load the dataset
 try:
-     = pd.read_csv('Housing.csv')
+    df = pd.read_csv('Housing.csv')
 except FileNotFoundError:
     print("Error: The file 'Housing.csv' was not found.")
 
