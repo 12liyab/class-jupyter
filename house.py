@@ -14,7 +14,7 @@ except FileNotFoundError:
 # Convert binary categorical variables to 0s and 1s
 print("Step 1: Data Preparation and Cleaning")
 binary_cols = ['mainroad', 'guestroom', 'basement', 'hotwaterheating', 'airconditioning', 'prefarea']
- col in binary_cols:
+for col in binary_cols:
     df[col] = df[col].apply(lambda x: 1 if x == 'yes' else 0)
 
 # Convert multi-class categorical 'furnishingstatus' to numerical using one-hot encoding
