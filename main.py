@@ -9,7 +9,7 @@ df['Booking Datetime'] = pd.to_datetime(df['Date'] + ' ' + df['Time'])
 df_cleaned = df.dropna(subset=['Booking ID'])
 
 # Setting up the figure for the subplots
-, axes = plt.subplots(nrows=3, ncols=1, figsize=(15, 18))
+fig, axes = plt.subplots(nrows=3, ncols=1, figsize=(15, 18))
 plt.style.use('seaborn-v0_8-whitegrid')
 plt.subplots_adjust(hspace=0.5)
 
