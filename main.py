@@ -10,7 +10,7 @@ df_cleaned = df.dropna(subset=['Booking ID'])
 
 # Setting up the figure for the subplots
 fig, axes = plt.subplots(nrows=3, ncols=1, figsize=(15, 18))
-plt.style.use('seaborn-v0_8-whitegrid')
+.style.use('seaborn-v0_8-whitegrid')
 plt.subplots_adjust(hspace=0.5)
 
 # 1. Plotting Booking Patterns (Daily Bookings)
